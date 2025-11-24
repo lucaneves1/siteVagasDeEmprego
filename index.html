@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Vagas de Emprego</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">EmpregoJá!</h1>
+            <p class="tagline">Encontre a oportunidade perfeita para sua carreira</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+
+            <section class="search-section">
+                <div class="search-box">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        class="search-input" 
+                        placeholder="Buscar por cargo, empresa ou localização..."
+                    >
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Todas as Vagas</button>
+                    <button class="filter-btn" data-filter="Tempo Integral">Tempo Integral</button>
+                    <button class="filter-btn" data-filter="Freelancer">Freelancer</button>
+                </div>
+            </section>
+
+            <div class="jobs-container">
+                <div class="jobs-list" id="jobsList">
+                </div>
+
+                <aside class="job-details-sidebar">
+                    <div id="jobDetailsContainer" class="job-details-placeholder">
+                        <p>Selecione uma vaga para ver mais detalhes</p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Site de Vagas de Emprego. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
